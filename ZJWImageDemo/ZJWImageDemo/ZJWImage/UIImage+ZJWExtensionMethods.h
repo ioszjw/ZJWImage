@@ -16,4 +16,7 @@
 /** image = color + size */
 + (instancetype)zjw_imageWithColor:(UIColor *)color size:(CGSize)size;
 
+/** image -> base64 */
+- (NSString *)zjw_base64Encoding;
+
 @end

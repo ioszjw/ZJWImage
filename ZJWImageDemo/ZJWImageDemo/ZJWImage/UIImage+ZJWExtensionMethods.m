@@ -29,4 +29,10 @@
     return [self zjw_imageWithColor:color size:size radius:0];
 }
 
+/** image -> base64 */
+- (NSString *)zjw_base64Encoding {
+    NSData *imageData = UIImageJPEGRepresentation(self, 0.5f);
+    return [imageData base64EncodedStringWithOptions:0];
+}
+
 @end
