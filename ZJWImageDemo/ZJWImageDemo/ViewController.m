@@ -35,6 +35,9 @@
     UIImageView *yellowImageView = [[UIImageView alloc] initWithFrame:CGRectMake(yellowImageViewX, yellowImageViewY, yellowImageViewWidth, yellowImageViewHeight)];
     yellowImageView.image = [UIImage zjw_imageWithColor:[UIColor yellowColor] size:CGSizeMake(yellowImageViewWidth, yellowImageViewHeight)];
     [self.view addSubview:yellowImageView];
+    
+    // 图片 -> base64 字符串
+    NSLog(@"%@", [yellowImageView.image zjw_base64Encoding]);
 }
 
 @end

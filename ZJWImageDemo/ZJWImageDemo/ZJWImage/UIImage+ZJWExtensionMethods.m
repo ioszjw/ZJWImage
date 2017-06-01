@@ -31,7 +31,7 @@
 
 /** image -> base64 */
 - (NSString *)zjw_base64Encoding {
-    NSData *imageData = UIImageJPEGRepresentation(self, 0.5f);
+    NSData *imageData = UIImageJPEGRepresentation(self, 0.5f); // 图片压缩
     return [imageData base64EncodedStringWithOptions:0];
 }
 
